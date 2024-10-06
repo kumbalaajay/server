@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMT Quiz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .content {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .question label {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DMT Quiz</h1>
+</header>
+
+<div class="content">
+    <h2>Test Your Knowledge of Digital Modulation Techniques</h2>
+
+    <form id="quizForm">
+        <div class="question">
+            <h3>1. Which of the following is a digital modulation technique?</h3>
+            <label><input type="radio" name="q1" value="a"> AM</label>
+            <label><input type="radio" name="q1" value="b"> FM</label>
+            <label><input type="radio" name="q1" value="c"> QPSK</label>
+            <label><input type="radio" name="q1" value="d"> FSK</label>
+        </div>
+
+        <div class="question">
+            <h3>2. What does BPSK stand for?</h3>
+            <label><input type="radio" name="q2" value="a"> Binary Phase Shift Keying</label>
+            <label><input type="radio" name="q2" value="b"> Bit Pulse Shift Keying</label>
+            <label><input type="radio" name="q2" value="c"> Bit Phase Signal Keying</label>
+            <label><input type="radio" name="q2" value="d"> Binary Pulse Signal Keying</label>
+        </div>
+
+        <div class="question">
+            <h3>3. Which modulation technique uses amplitude to convey information?</h3>
+            <label><input type="radio" name="q3" value="a"> PSK</label>
+            <label><input type="radio" name="q3" value="b"> FSK</label>
+            <label><input type="radio" name="q3" value="c"> ASK</label>
+            <label><input type="radio" name="q3" value="d"> QPSK</label>
+        </div>
+
+        <div class="question">
+            <h3>4. Which modulation is used in Wi-Fi systems?</h3>
+            <label><input type="radio" name="q4" value="a"> QPSK</label>
+            <label><input type="radio" name="q4" value="b"> BPSK</label>
+            <label><input type="radio" name="q4" value="c"> OFDM</label>
+            <label><input type="radio" name="q4" value="d"> ASK</label>
+        </div>
+
+        <div class="question">
+            <h3>5. What is the primary advantage of QPSK over BPSK?</h3>
+            <label><input type="radio" name="q5" value="a"> Higher bandwidth efficiency</label>
+            <label><input type="radio" name="q5" value="b"> Lower power consumption</label>
+            <label><input type="radio" name="q5" value="c"> Simpler implementation</label>
+            <label><input type="radio" name="q5" value="d"> Higher noise immunity</label>
+        </div>
+
+        <div class="question">
+            <h3>6. Which modulation scheme is widely used in satellite communication?</h3>
+            <label><input type="radio" name="q6" value="a"> BPSK</label>
+            <label><input type="radio" name="q6" value="b"> QAM</label>
+            <label><input type="radio" name="q6" value="c"> QPSK</label>
+            <label><input type="radio" name="q6" value="d"> FSK</label>
+        </div>
+
+        <div class="question">
+            <h3>7. What does the 'Q' in QAM stand for?</h3>
+            <label><input type="radio" name="q7" value="a"> Quadrature</label>
+            <label><input type="radio" name="q7" value="b"> Quality</label>
+            <label><input type="radio" name="q7" value="c"> Quantization</label>
+            <label><input type="radio" name="q7" value="d"> Query</label>
+        </div>
+
+        <div class="question">
+            <h3>8. Which modulation technique varies the frequency of the carrier signal?</h3>
+            <label><input type="radio" name="q8" value="a"> PSK</label>
+            <label><input type="radio" name="q8" value="b"> FSK</label>
+            <label><input type="radio" name="q8" value="c"> ASK</label>
+            <label><input type="radio" name="q8" value="d"> QPSK</label>
+        </div>
+
+        <div class="question">
+            <h3>9. In digital modulation, what does 'symbol' represent?</h3>
+            <label><input type="radio" name="q9" value="a"> A single bit</label>
+            <label><input type="radio" name="q9" value="b"> A group of bits</label>
+            <label><input type="radio" name="q9" value="c"> A phase angle</label>
+            <label><input type="radio" name="q9" value="d"> Amplitude variation</label>
+        </div>
+
+        <div class="question">
+            <h3>10. What is the key difference between ASK and PSK?</h3>
+            <label><input type="radio" name="q10" value="a"> ASK varies amplitude, PSK varies phase</label>
+            <label><input type="radio" name="q10" value="b"> ASK varies phase, PSK varies amplitude</label>
+            <label><input type="radio" name="q10" value="c"> ASK varies frequency, PSK varies phase</label>
+            <label><input type="radio" name="q10" value="d"> ASK varies phase, PSK varies frequency</label>
+        </div>
+
+        <button type="button" class="submit" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+</div>
+
+<script>
+    function submitQuiz() {
+        let score = 0;
+        const answers = {
+            q1: 'c',
+            q2: 'a',
+            q3: 'c',
+            q4: 'c',
+            q5: 'a',
+            q6: 'c',
+            q7: 'a',
+            q8: 'b',
+            q9: 'b',
+            q10: 'a',
+        };
+
+        const form = document.getElementById('quizForm');
+        for (let question in answers) {
+            const selectedOption = form.elements[question];
+            let answer;
+            for (let i = 0; i < selectedOption.length; i++) {
+                if (selectedOption[i].checked) {
+                    answer = selectedOption[i].value;
+                    break;
+                }
+            }
+            if (answer === answers[question]) {
+                score++;
+            }
+        }
+
+        window.location.href = `quiz-result.html?score=${score}`;
+    }
+</script>
+
+</body>
+</html>

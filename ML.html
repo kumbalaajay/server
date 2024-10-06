@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Quiz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .content {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .question label {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Machine Learning Quiz</h1>
+</header>
+
+<div class="content">
+    <h2>Test Your Knowledge of Machine Learning</h2>
+
+    <form id="quizForm">
+        <div class="question">
+            <h3>1. Which of the following is a type of supervised learning?</h3>
+            <label><input type="radio" name="q1" value="a"> Clustering</label>
+            <label><input type="radio" name="q1" value="b"> Classification</label>
+            <label><input type="radio" name="q1" value="c"> Dimensionality reduction</label>
+            <label><input type="radio" name="q1" value="d"> Association rule learning</label>
+        </div>
+
+        <div class="question">
+            <h3>2. Which algorithm is commonly used for classification problems?</h3>
+            <label><input type="radio" name="q2" value="a"> K-means</label>
+            <label><input type="radio" name="q2" value="b"> Linear regression</label>
+            <label><input type="radio" name="q2" value="c"> Decision Trees</label>
+            <label><input type="radio" name="q2" value="d"> PCA</label>
+        </div>
+
+        <div class="question">
+            <h3>3. What does overfitting refer to in machine learning?</h3>
+            <label><input type="radio" name="q3" value="a"> Model performs well on training data but poorly on unseen data</label>
+            <label><input type="radio" name="q3" value="b"> Model performs poorly on training data but well on test data</label>
+            <label><input type="radio" name="q3" value="c"> Model performs equally well on both training and test data</label>
+            <label><input type="radio" name="q3" value="d"> Model is under-optimized</label>
+        </div>
+
+        <div class="question">
+            <h3>4. Which of the following is a loss function used in regression problems?</h3>
+            <label><input type="radio" name="q4" value="a"> Cross-entropy loss</label>
+            <label><input type="radio" name="q4" value="b"> Mean Squared Error (MSE)</label>
+            <label><input type="radio" name="q4" value="c"> Hinge loss</label>
+            <label><input type="radio" name="q4" value="d"> Softmax loss</label>
+        </div>
+
+        <div class="question">
+            <h3>5. Which algorithm is an unsupervised learning technique?</h3>
+            <label><input type="radio" name="q5" value="a"> Support Vector Machines (SVM)</label>
+            <label><input type="radio" name="q5" value="b"> Linear regression</label>
+            <label><input type="radio" name="q5" value="c"> K-means</label>
+            <label><input type="radio" name="q5" value="d"> Naive Bayes</label>
+        </div>
+
+        <div class="question">
+            <h3>6. What is the purpose of a validation dataset in machine learning?</h3>
+            <label><input type="radio" name="q6" value="a"> To fine-tune the model's parameters</label>
+            <label><input type="radio" name="q6" value="b"> To train the model</label>
+            <label><input type="radio" name="q6" value="c"> To test the model on unseen data</label>
+            <label><input type="radio" name="q6" value="d"> To create more features</label>
+        </div>
+
+        <div class="question">
+            <h3>7. What is a common technique to avoid overfitting?</h3>
+            <label><input type="radio" name="q7" value="a"> Increasing model complexity</label>
+            <label><input type="radio" name="q7" value="b"> Early stopping</label>
+            <label><input type="radio" name="q7" value="c"> Using only training data</label>
+            <label><input type="radio" name="q7" value="d"> Reducing the dataset size</label>
+        </div>
+
+        <div class="question">
+            <h3>8. In deep learning, what is a neural network layer?</h3>
+            <label><input type="radio" name="q8" value="a"> A collection of neurons working together</label>
+            <label><input type="radio" name="q8" value="b"> A set of features in the data</label>
+            <label><input type="radio" name="q8" value="c"> A machine learning algorithm</label>
+            <label><input type="radio" name="q8" value="d"> A pre-trained model</label>
+        </div>
+
+        <div class="question">
+            <h3>9. What is a confusion matrix used for?</h3>
+            <label><input type="radio" name="q9" value="a"> To visualize clustering results</label>
+            <label><input type="radio" name="q9" value="b"> To evaluate the performance of a classification model</label>
+            <label><input type="radio" name="q9" value="c"> To calculate regression errors</label>
+            <label><input type="radio" name="q9" value="d"> To optimize hyperparameters</label>
+        </div>
+
+        <div class="question">
+            <h3>10. Which of the following is a dimensionality reduction technique?</h3>
+            <label><input type="radio" name="q10" value="a"> Random Forest</label>
+            <label><input type="radio" name="q10" value="b"> Principal Component Analysis (PCA)</label>
+            <label><input type="radio" name="q10" value="c"> Gradient Boosting</label>
+            <label><input type="radio" name="q10" value="d"> XGBoost</label>
+        </div>
+
+        <button type="button" class="submit" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+</div>
+
+<script>
+    function submitQuiz() {
+    let score = 0;
+    const answers = {
+        q1: 'b',
+            q2: 'c',
+            q3: 'a',
+            q4: 'b',
+            q5: 'c',
+            q6: 'a',
+            q7: 'b',
+            q8: 'a',
+            q9: 'b',
+        q10: 'c',
+    };
+
+    const form = document.getElementById('quizForm');
+
+    for (let question in answers) {
+        const selectedOption = form.elements[question];
+        
+        let answer;
+        for (let i = 0; i < selectedOption.length; i++) {
+            if (selectedOption[i].checked) {
+                answer = selectedOption[i].value;
+                break;
+            }
+        }
+
+        if (answer === answers[question]) {
+            score++;
+        }
+    }
+
+    window.location.href = `quiz-result.html?score=${score}`;
+}
+
+</script>
+
+</body>
+</html>

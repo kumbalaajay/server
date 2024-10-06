@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiler Design Quiz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        .content {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .question label {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Compiler Design Quiz</h1>
+</header>
+
+<div class="content">
+    <h2>Test Your Knowledge of Compiler Design</h2>
+
+    <form id="quizForm">
+        <div class="question">
+            <h3>1. Which phase of the compiler is responsible for syntax checking?</h3>
+            <label><input type="radio" name="q1" value="a"> Lexical Analysis</label>
+            <label><input type="radio" name="q1" value="b"> Syntax Analysis</label>
+            <label><input type="radio" name="q1" value="c"> Semantic Analysis</label>
+            <label><input type="radio" name="q1" value="d"> Code Generation</label>
+        </div>
+
+        <div class="question">
+            <h3>2. What is the output of the lexical analysis phase?</h3>
+            <label><input type="radio" name="q2" value="a"> Abstract Syntax Tree</label>
+            <label><input type="radio" name="q2" value="b"> Tokens</label>
+            <label><input type="radio" name="q2" value="c"> Intermediate Code</label>
+            <label><input type="radio" name="q2" value="d"> Machine Code</label>
+        </div>
+
+        <div class="question">
+            <h3>3. Which data structure is used to hold the tokens during parsing?</h3>
+            <label><input type="radio" name="q3" value="a"> Stack</label>
+            <label><input type="radio" name="q3" value="b"> Queue</label>
+            <label><input type="radio" name="q3" value="c"> Tree</label>
+            <label><input type="radio" name="q3" value="d"> Linked List</label>
+        </div>
+
+        <div class="question">
+            <h3>4. Which of the following is an example of an intermediate code?</h3>
+            <label><input type="radio" name="q4" value="a"> Assembly Code</label>
+            <label><input type="radio" name="q4" value="b"> Three Address Code</label>
+            <label><input type="radio" name="q4" value="c"> Binary Code</label>
+            <label><input type="radio" name="q4" value="d"> Byte Code</label>
+        </div>
+
+        <div class="question">
+            <h3>5. What is the role of semantic analysis in a compiler?</h3>
+            <label><input type="radio" name="q5" value="a"> To check the syntactical structure</label>
+            <label><input type="radio" name="q5" value="b"> To check the meaning of the program</label>
+            <label><input type="radio" name="q5" value="c"> To optimize the code</label>
+            <label><input type="radio" name="q5" value="d"> To generate machine code</label>
+        </div>
+
+        <div class="question">
+            <h3>6. Which of the following is a bottom-up parsing technique?</h3>
+            <label><input type="radio" name="q6" value="a"> LL Parser</label>
+            <label><input type="radio" name="q6" value="b"> LR Parser</label>
+            <label><input type="radio" name="q6" value="c"> Recursive Descent Parser</label>
+            <label><input type="radio" name="q6" value="d"> Operator Precedence Parser</label>
+        </div>
+
+        <div class="question">
+            <h3>7. What does a symbol table in a compiler store?</h3>
+            <label><input type="radio" name="q7" value="a"> Variable names and their values</label>
+            <label><input type="radio" name="q7" value="b"> Data types and variable names</label>
+            <label><input type="radio" name="q7" value="c"> Syntax rules</label>
+            <label><input type="radio" name="q7" value="d"> All of the above</label>
+        </div>
+
+        <div class="question">
+            <h3>8. In which phase is the intermediate code optimized?</h3>
+            <label><input type="radio" name="q8" value="a"> Lexical Analysis</label>
+            <label><input type="radio" name="q8" value="b"> Code Generation</label>
+            <label><input type="radio" name="q8" value="c"> Code Optimization</label>
+            <label><input type="radio" name="q8" value="d"> Semantic Analysis</label>
+        </div>
+
+        <div class="question">
+            <h3>9. What is the purpose of a linker?</h3>
+            <label><input type="radio" name="q9" value="a"> To resolve external references</label>
+            <label><input type="radio" name="q9" value="b"> To check syntax</label>
+            <label><input type="radio" name="q9" value="c"> To perform lexical analysis</label>
+            <label><input type="radio" name="q9" value="d"> To parse the code</label>
+        </div>
+
+        <div class="question">
+            <h3>10. Which part of the compiler converts intermediate code to machine code?</h3>
+            <label><input type="radio" name="q10" value="a"> Code Generation</label>
+            <label><input type="radio" name="q10" value="b"> Code Optimization</label>
+            <label><input type="radio" name="q10" value="c"> Semantic Analysis</label>
+            <label><input type="radio" name="q10" value="d"> Syntax Analysis</label>
+        </div>
+
+        <button type="button" class="submit" onclick="submitQuiz()"  >Submit Quiz</button>
+    </form>
+</div>
+
+<script>
+    function submitQuiz() {
+        let score = 0;
+        const answers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'a',
+            q4: 'b',
+            q5: 'b',
+            q6: 'b',
+            q7: 'd',
+            q8: 'c',
+            q9: 'a',
+            q10: 'a',
+        };
+
+        const form = document.getElementById('quizForm');
+        for (let question in answers) {
+            const selectedOption = form.elements[question];
+            let answer;
+            for (let i = 0; i < selectedOption.length; i++) {
+                if (selectedOption[i].checked) {
+                    answer = selectedOption[i].value;
+                    break;
+                }
+            }
+            if (answer === answers[question]) {
+                score++;
+            }
+        }
+
+        window.location.href = `/online_quiz/quiz-result?score=${score}`;
+    }   
+</script>
+
+</body>
+</html>

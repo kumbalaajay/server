@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz System - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px 20px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #45a049;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #3e9142;
+        }
+
+        .content {
+            text-align: center;
+            padding: 120px 20px; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.3rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: justify;
+        }
+
+        .welcome-message {
+            background-color: #e0f7fa;
+            padding: 40px 30px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .welcome-message h2 {
+            font-size: 2.5rem;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        .welcome-message p {
+            font-size: 1.3rem;
+            color: #333;
+            line-height: 1.7;
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        .subjects-section {
+            margin-top: 50px;
+            padding-bottom: 40px;
+        }
+
+        .subjects-section h3 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .subjects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .subject {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .subject:hover {
+            transform: scale(1.05);
+        }
+
+        .subject h4 {
+            font-size: 1.6rem;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .subject p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.3;
+        }
+
+        .subject a {
+            text-decoration: none;
+            display: block;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 10px 0;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .subject a:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .buttons a {
+                font-size: 1.1rem;
+                padding: 8px 12px;
+            }
+
+            .content h2 {
+                font-size: 2rem;
+            }
+
+            .content p {
+                font-size: 1.2rem;
+            }
+
+            .welcome-message h2 {
+                font-size: 2.2rem;
+            }
+
+            .welcome-message p {
+                font-size: 1.2rem;
+            }
+
+            .subjects-section h3 {
+                font-size: 1.8rem;
+            }
+
+            .subject {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                margin-top: 20px;
+            }
+
+            nav a {
+                font-size: 1.1rem;
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Online Quiz System</h1>
+        <!-- <div class="buttons">
+            <a href="online_quiz/login">Login</a>
+            <a href="online_quiz/registration">Register</a>
+        </div> -->
+    </header>
+
+    <div class="content">
+        <div class="welcome-message">
+            <h2>Enhance Your Learning with Engaging Quizzes</h2>
+            <p>
+                Our Online Quiz System provides an intuitive and engaging platform to test your knowledge in various subjects. 
+                Whether you're a student, teacher, or lifelong learner, our quizzes help sharpen your skills and improve your understanding.
+                Join today and explore quizzes that are designed to challenge and motivate you to learn more every day!
+            </p>
+        </div>
+
+        <div class="subjects-section">
+            <h3>Explore Quiz Categories</h3>
+            <div class="subjects">
+                <div class="subject">
+                    <h4>COMPUTER NETWORKS</h4>
+                    <p>Networks allow computers to share and access resources with other computing devices connected to it.</p>
+                    <a href="/online_quiz/CN">Start Quiz</a>
+                </div>
+                <div class="subject">
+                    <h4>DATA MINING TECHNIQUES</h4>
+                    <p> DMT can induce a state or feeling wherein the person believes to "communicate with other intelligent lifeforms" .</p>
+                    <a href="/online_quiz/DMT">Start Quiz</a>
+                </div>
+                <div class="subject">
+                    <h4>MACHINE LEARNING</h4>
+                    <p>This enables computer systems to make predictions and decisions without being explicitly programmed.</p>
+                    <a href="/online_quiz/ML">Start Quiz</a>
+                </div>
+                <div class="subject">
+                    <h4>MERN STACK</h4>
+                    <p>MERN stack is a collection of technologies that enables faster application development.</p>
+                    <a href="/online_quiz/MSD">Start Quiz</a>
+                </div>
+                <div class="subject">
+                    <h4>ARTIFICIAL INTELLIGENCE</h4>
+                    <p>AI enhances decision-making by leveraging vast data to identify patterns and trends.</p>
+                    <a href="/online_quiz/AI">Start Quiz</a>
+                </div>
+                <div class="subject">
+                    <h4>COMPILER DESIGN</h4>
+                    <p>Programmers use compilers to translate high-level programming languages into machine code that computers can understand.</p>
+                    <a href="/online_quiz/CD">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

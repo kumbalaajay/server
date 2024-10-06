@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks Quiz</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 100px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Quiz Form Styles */
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .question h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .question label {
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Computer Networks Quiz</h1>
+</header>
+
+<div class="content">
+    <h2>Test Your Knowledge of Computer Networks</h2>
+
+    <form id="quizForm">
+        
+        <div class="question">
+            <h3>1. Which protocol is used to send emails?</h3>
+            <label><input type="radio" name="q1" value="a"> HTTP</label>
+            <label><input type="radio" name="q1" value="b"> FTP</label>
+            <label><input type="radio" name="q1" value="c"> SMTP</label>
+            <label><input type="radio" name="q1" value="d"> IMAP</label>
+        </div>
+
+        <div class="question">
+            <h3>2. What does IP stand for?</h3>
+            <label><input type="radio" name="q2" value="a"> Internet Provider</label>
+            <label><input type="radio" name="q2" value="b"> Internet Protocol</label>
+            <label><input type="radio" name="q2" value="c"> Information Protocol</label>
+            <label><input type="radio" name="q2" value="d"> Integrated Protocol</label>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <h3>3. What is the maximum length of an IPv4 address?</h3>
+            <label><input type="radio" name="q3" value="a"> 64 bits</label>
+            <label><input type="radio" name="q3" value="b"> 16 bits</label>
+            <label><input type="radio" name="q3" value="c"> 128 bits</label>
+            <label><input type="radio" name="q3" value="d"> 32 bits</label>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <h3>4. What does LAN stand for?</h3>
+            <label><input type="radio" name="q4" value="a"> Local Area Network</label>
+            <label><input type="radio" name="q4" value="b"> Long Area Network</label>
+            <label><input type="radio" name="q4" value="c"> Large Access Network</label>
+            <label><input type="radio" name="q4" value="d"> Long Access Network</label>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <h3>5. Which layer of the OSI model is responsible for routing?</h3>
+            <label><input type="radio" name="q5" value="a"> Data Link</label>
+            <label><input type="radio" name="q5" value="b"> Network</label>
+            <label><input type="radio" name="q5" value="c"> Transport</label>
+            <label><input type="radio" name="q5" value="d"> Physical</label>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <h3>6. What is the full form of DNS?</h3>
+            <label><input type="radio" name="q6" value="a"> Domain Name System</label>
+            <label><input type="radio" name="q6" value="b"> Domain Number System</label>
+            <label><input type="radio" name="q6" value="c"> Data Name System</label>
+            <label><input type="radio" name="q6" value="d"> Domain Number Source</label>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <h3>7. What is the default port number for HTTP?</h3>
+            <label><input type="radio" name="q7" value="a"> 21</label>
+            <label><input type="radio" name="q7" value="b"> 80</label>
+            <label><input type="radio" name="q7" value="c"> 25</label>
+            <label><input type="radio" name="q7" value="d"> 443</label>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <h3>8. Which topology connects all devices to a single backbone cable?</h3>
+            <label><input type="radio" name="q8" value="a"> Ring</label>
+            <label><input type="radio" name="q8" value="b"> Star</label>
+            <label><input type="radio" name="q8" value="c"> Bus</label>
+            <label><input type="radio" name="q8" value="d"> Mesh</label>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <h3>9. What is the main function of a router?</h3>
+            <label><input type="radio" name="q9" value="a"> Filtering packets</label>
+            <label><input type="radio" name="q9" value="b"> Routing traffic between networks</label>
+            <label><input type="radio" name="q9" value="c"> Regenerating signals</label>
+            <label><input type="radio" name="q9" value="d"> Connecting devices in a LAN</label>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <h3>10. Which protocol provides secure communication over the internet?</h3>
+            <label><input type="radio" name="q10" value="a"> HTTP</label>
+            <label><input type="radio" name="q10" value="b"> TCP</label>
+            <label><input type="radio" name="q10" value="c"> SSL</label>
+            <label><input type="radio" name="q10" value="d"> UDP</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+</div>
+
+<script>
+    function submitQuiz() {
+    let score = 0;
+    const answers = {
+        q1: 'c',
+        q2: 'b',
+        q3: 'd',
+        q4: 'a',
+        q5: 'b',
+        q6: 'a',
+        q7: 'b',
+        q8: 'c',
+        q9: 'b',
+        q10: 'c',
+    };
+
+    const form = document.getElementById('quizForm');
+
+    // Loop through each question and check the answer
+    for (let question in answers) {
+        const selectedOption = form.elements[question];
+        
+        // Check if an option is selected for the current question
+        let answer;
+        for (let i = 0; i < selectedOption.length; i++) {
+            if (selectedOption[i].checked) {
+                answer = selectedOption[i].value;
+                break;
+            }
+        }
+
+        // Compare the selected answer with the correct one
+        if (answer === answers[question]) {
+            score++;
+        }
+    }
+
+    // Redirect to the result page with the score
+    window.location.href = `quiz-result.html?score=${score}`;
+}
+
+</script>
+
+</body>
+</html>
